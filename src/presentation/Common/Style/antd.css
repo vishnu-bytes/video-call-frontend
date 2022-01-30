@@ -1,0 +1,327 @@
+/* antd override */
+
+/* START: Button */
+.ant-btn,
+.ant-btn:hover,
+.ant-btn:focus,
+.ant-btn:active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ffffff;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  min-height: 45px;
+}
+.ant-btn-primary,
+.ant-btn-primary:hover,
+.ant-btn-primary:focus,
+.ant-btn-primary:active {
+  background-color: #ff8585;
+  border-color: #ff8585;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ant-btn-default,
+.ant-btn-default:hover,
+.ant-btn-default:focus,
+.ant-btn-default:active {
+  color: #000000;
+}
+.ant-btn-danger,
+.ant-btn-danger:hover,
+.ant-btn-danger:focus,
+.ant-btn-danger:active {
+  background-color: #ff6347;
+  border-color: #ff6347;
+  color: #ffffff;
+}
+/* END: Button */
+
+/* START: Modal */
+.ant-modal-content {
+  background: #121212;
+  box-shadow: 0px 24px 38px rgba(0, 0, 0, 0.14),
+    0px 9px 46px rgba(0, 0, 0, 0.12), 0px 11px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px 0;
+}
+.ant-modal-header {
+  background: #121212;
+  color: #ffffff;
+  border: none;
+}
+.ant-modal-content p,
+.ant-modal-title {
+  color: #ffffff;
+}
+.ant-modal-close {
+  color: rgba(255, 255, 255, 0.87);
+}
+.ant-modal-close:hover {
+  color: rgba(255, 255, 255, 0.87);
+}
+.ant-modal-footer {
+  border: none;
+}
+/* END: Modal */
+
+/* START: Drawer */
+.ant-drawer-body {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.08)
+    ),
+    #121212;
+}
+.ant-drawer-content-wrapper {
+  width: 300px !important;
+}
+/* END: Drawer */
+
+/* START: Menu */
+.ant-menu {
+  background: #252525;
+  border-color: #252525;
+}
+.ant-menu-vertical .ant-menu-item {
+  padding: 0 10px;
+  border-radius: 5px;
+  font-weight: normal;
+  font-size: 14px;
+}
+.ant-menu-title-content {
+  display: flex;
+  align-items: center;
+}
+.ant-menu-title-content .autoSideNav-text {
+  color: #ffffff;
+}
+.ant-menu-item:active,
+.ant-menu-submenu-title:active,
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0.04)
+    ),
+    rgba(252, 92, 46, 0.08);
+}
+.ant-menu-light .ant-menu-item:hover .autoSideNav-text,
+.ant-menu-light .ant-menu-item-active .autoSideNav-text,
+.ant-menu-light .ant-menu-item:hover .autoSideNav-icon,
+.ant-menu-light .ant-menu-item-active .autoSideNav-icon,
+.ant-menu-light
+  .ant-menu:not(.ant-menu-inline)
+  .ant-menu-submenu-open
+  .autoSideNav-text,
+.ant-menu-light .ant-menu-submenu-active .autoSideNav-text,
+.ant-menu-light .ant-menu-submenu-title:hover .autoSideNav-text,
+.ant-menu-item-selected a,
+.ant-menu-item a:hover,
+.ant-menu-item-selected a:hover {
+  color: #fc5c2e !important;
+}
+/* END: Menu */
+
+/* START: Form & Input */
+.ant-input,
+.ant-picker,
+.ant-form-item-has-error
+  :not(.ant-input-disabled):not(.ant-input-borderless).ant-input,
+.ant-form-item-has-error
+  :not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover,
+.ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.87);
+  border-radius: 12px;
+}
+
+.ant-input-number,
+.ant-form-item-has-error .ant-input-number,
+.ant-form-item-has-error .ant-picker,
+.ant-form-item-has-error .ant-input-number:not([disabled]):hover,
+.ant-form-item-has-error .ant-picker:not([disabled]):hover,
+.ant-input-number:hover {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.87);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.ant-input-number-input-wrap,
+.ant-input-number-input {
+  height: 50px;
+}
+
+.ant-form-item-label > label {
+  color: #dddddd;
+}
+.ant-select-arrow,
+.ant-picker-suffix,
+.ant-picker-input > input {
+  color: #dddddd;
+}
+.ant-form-item {
+  margin-bottom: 15px;
+}
+.ant-form-item .ant-form-item-label {
+  padding: 0;
+}
+.ant-input:hover,
+.ant-input:focus,
+.ant-input-focused .ant-input-number:hover,
+.ant-input-number:focus,
+.ant-input-number-focused {
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.1);
+}
+/* ant-col ant-form-item-label */
+/* END: Form & Input */
+
+/* START: Select */
+.ant-form-item-has-error
+  .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input)
+  .ant-select-selector {
+  background: rgba(255, 255, 255, 0.08);
+}
+.ant-select-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-select-dropdown {
+  background-color: #242424;
+  border-radius: 8px;
+}
+
+.ant-select-item,
+.ant-select-item-option-selected,
+.ant-select-item-option,
+.ant-select-item-option-active,
+.ant-select-item-option-active:not(.ant-select-item-option-disabled),
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: transparent;
+}
+/* END: Select */
+.ant-picker {
+  width: 100%;
+}
+/* START: DatePicker */
+.ant-picker-panel-container {
+  background-color: #242424;
+  border-radius: 8px;
+}
+
+.ant-picker-panel {
+  border: none;
+}
+
+.ant-picker-cell {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.ant-picker-panel button,
+.ant-picker-body,
+.ant-picker-content th {
+  color: white;
+}
+
+.ant-picker-cell-in-view {
+  color: white;
+}
+
+.ant-picker-today-btn {
+  color: white;
+}
+
+.ant-picker-header,
+.ant-picker-body,
+.ant-picker-footer {
+  border: none !important;
+}
+/* END: DatePicker */
+
+/* START: Spin */
+.ant-spin-text {
+  color: rgba(255, 255, 255, 0.4);
+}
+.ant-spin-dot-item {
+  background-color: #ff6f00;
+}
+/* END: Spin */
+
+/* START: Tabs */
+.ant-tabs-tab-btn {
+  color: rgba(255, 255, 255, 0.87);
+}
+.ant-tabs-top > .ant-tabs-nav::before,
+.ant-tabs-bottom > .ant-tabs-nav::before,
+.ant-tabs-top > div > .ant-tabs-nav::before,
+.ant-tabs-bottom > div > .ant-tabs-nav::before {
+  border-color: rgba(255, 255, 255, 0.38);
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
+.ant-tabs-tab:hover {
+  /* color: #ff5b22; */
+  color: rgba(255, 255, 255, 0.87);
+}
+.ant-tabs > .ant-tabs-nav .ant-tabs-nav-list,
+.ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-list {
+  width: 100%;
+}
+.ant-tabs-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ant-tabs-ink-bar {
+  background-color: #ff5b22;
+}
+/* END: Tabs */
+
+/* START: DropDown */
+.ant-dropdown-menu {
+  color: #ffffff;
+  padding: 5px 20px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.12),
+      rgba(255, 255, 255, 0.12)
+    ),
+    #121212;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  /* border-color: #252525; */
+}
+
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-submenu-title {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.12),
+      rgba(255, 255, 255, 0.12)
+    ),
+    #121212;
+  color: #ffffff;
+}
+.ant-dropdown-menu-item:hover,
+.ant-dropdown-menu-submenu-title:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.12),
+      rgba(255, 255, 255, 0.12)
+    ),
+    #121212;
+  color: #fc5c2e;
+}
+/* END: DropDown */

@@ -1,0 +1,140 @@
+.autoHome {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width: 100%;
+
+  .auto_bg {
+    min-height: 100vh;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bg-text {
+      background-color: rgb(0, 0, 0); /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      border: 1px solid #f1f1f1;
+      position: absolute;
+      font-size: 32px;
+      z-index: 1000;
+      padding: 28px;
+      width: 70%;
+      text-align: center;
+      h1 {
+        color: white;
+      }
+    }
+  }
+  .btn_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .button_div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    line-height: 110%;
+
+    h2 {
+      font-size: 56px;
+      text-align: center;
+      font-weight: 700;
+      line-height: 150%;
+      span {
+        color: #f46f49;
+      }
+    }
+  }
+}
+.meeting_type {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin-top: 12px;
+    width: 100%;
+    color: black;
+  }
+}
+.ant-popover-inner-content {
+  padding: unset !important;
+}
+.autoHome-menuIcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  button {
+    width: 65px;
+    height: 39px;
+    border: 2px solid #ff0000;
+    outline: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ff0000;
+  }
+}
+
+#container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 786px) and (max-aspect-ratio: 13/9) and (orientation: portrait) {
+  .autoHome {
+    flex-direction: column-reverse;
+    .button_div {
+      width: 100%;
+    }
+    .auto_bg {
+      min-height: unset;
+      width: 100%;
+    }
+    .auto_bg img {
+      width: 100%;
+    }
+  }
+}
+.ant-modal-footer {
+  display: flex;
+}
+@media screen and (max-width: 906px) and (orientation: landscape) {
+  .autoHome {
+    flex-direction: column-reverse;
+    .button_div {
+      width: 100%;
+    }
+    .auto_bg {
+      min-height: unset;
+      width: 100%;
+    }
+    .auto_bg img {
+      width: 100%;
+    }
+  }
+}
+.ant-row {
+  display: flex;
+  justify-content: space-between;
+}
+.ant-picker {
+  width: 100% !important;
+}
+.ant-picker-time-panel-column
+  > li.ant-picker-time-panel-cell
+  .ant-picker-time-panel-cell-inner {
+  color: white !important;
+}
+.ant-picker-time-panel-column
+  > li.ant-picker-time-panel-cell-selected
+  .ant-picker-time-panel-cell-inner {
+  background: unset !important;
+}

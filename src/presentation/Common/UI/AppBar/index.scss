@@ -1,0 +1,36 @@
+.autoAppbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  background: #121212;
+  color: #ffffff;
+}
+.autoAppbar-left,
+.autoAppbar-mid,
+.autoAppbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.autoAppbar-left {
+  flex: 0.2;
+}
+.autoAppbar-mid {
+  flex: 1;
+}
+.autoAppbar-mid .autoAppbar-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.autoAppbar-mid h3 {
+  color: #ffffff;
+  margin: 0;
+  font-weight: 600;
+}
+.autoAppbar-right {
+  flex: 0.2;
+}

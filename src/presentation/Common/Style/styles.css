@@ -1,0 +1,12 @@
+.clr-danger {
+  color: #fc5c2e !important;
+  font-weight: 600;
+}
+.clr-warn {
+  color: #fcaa2e !important;
+  font-weight: 600;
+}
+.clr-msg {
+  color: #3ec500 !important;
+  font-weight: 600;
+}
